@@ -6,6 +6,32 @@ Build RestAPI for  CRUD operation from JSON data.
 ### Data Format
 
 ##### Request Body
+
+```json
+  {
+        "modelName": "Teacher",
+        "modelAttributes": [
+          {
+            "name": "teacherInitial",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          },
+          {
+            "name": "teacherName",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          }
+        ],
+        "apiEndPoints": ["GET", "POST", "DELETE", "PUT"]
+      },
+
+```
+
+##### Response Body
+
+
 ```json
  {
     "modelName": "Teacher",
