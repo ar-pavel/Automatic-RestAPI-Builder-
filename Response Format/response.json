@@ -1,0 +1,74 @@
+[
+  {
+    "modelName": "Student",
+    "endPoints": [
+      {
+        "protocol": "HTTP",
+        "requestType": "GET",
+        "href": "/students"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "POST",
+        "href": "/students"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "GET",
+        "href": "/students/{property}"
+      }
+    ]
+  },
+
+  {
+    "modelName": "Teacher",
+    "endPoints": [
+      {
+        "protocol": "HTTP",
+        "requestType": "GET",
+        "href": "/teachers"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "POST",
+        "href": "/teachers"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "GET",
+        "href": "/teachers/{property}"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "PUT",
+        "href": "/teachers/{property}"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "DELETE",
+        "href": "/teachers/{property}"
+      }
+    ]
+  },
+
+  {
+    "modelName": "Employee",
+    "endPoints": [
+      {
+        "protocol": "HTTP",
+        "requestType": "GET",
+        "href": "/employees"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "POST",
+        "href": "/employees"
+      },
+      {
+        "protocol": "HTTP",
+        "requestType": "GET",
+        "href": "/employees/{property}"
+      }
+    ]
+  }
+]

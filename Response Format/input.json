@@ -1,0 +1,75 @@
+[
+  {
+    "type": "model",
+    "attributes": [
+      {
+        "modelName": "Student",
+        "modelAttributes": [
+          {
+            "name": "studentID",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          },
+          {
+            "name": "studentName",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          }
+        ],
+        "apiEndPoints": ["GET", "POST"]
+      },
+      {
+        "modelName": "Teacher",
+        "modelAttributes": [
+          {
+            "name": "teacherInitial",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          },
+          {
+            "name": "teacherName",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          }
+        ],
+        "apiEndPoints": ["GET", "POST", "DELETE", "PUT"]
+      },
+      {
+        "modelName": "Employee",
+        "modelAttributes": [
+          {
+            "name": "employeeID",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          },
+          {
+            "name": "employeeName",
+            "type": "String",
+            "required": true,
+            "default": "N/A"
+          }
+        ],
+        "apiEndPoints": ["GET", "POST"]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "attributes": {
+      "applicable": true,
+      "dbProperty": {
+        "dbName": "MongoDB",
+        "misc": "N/A"
+      }
+    }
+  },
+  {
+    "type": "",
+    "attributes": {}
+  }
+]
