@@ -1,2 +1,2 @@
-# Automatic-RestAPI-Builder-
-Build RestAPI for for CRUD operation from JSON data. 
+# Automatic-RestAPI-Builder
+Build RestAPI for  CRUD operation from JSON data. 
