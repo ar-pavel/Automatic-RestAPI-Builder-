@@ -5,7 +5,8 @@ Build RestAPI for  CRUD operation from JSON data.
 
 ### Data Format
 
-##### Request Body
+<details>
+<summary>Request Body</summary>
 
 ```json
   {
@@ -28,9 +29,10 @@ Build RestAPI for  CRUD operation from JSON data.
       },
 }
 ```
+</details>
 
-##### Response Body
-
+<details>
+<summary>Response Body</summary>
 
 ```json
  {
@@ -64,3 +66,4 @@ Build RestAPI for  CRUD operation from JSON data.
     ]
   }
   ```
+</details>
