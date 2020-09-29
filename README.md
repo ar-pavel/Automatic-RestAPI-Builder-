@@ -26,7 +26,7 @@ Build RestAPI for  CRUD operation from JSON data.
         ],
         "apiEndPoints": ["GET", "POST", "DELETE", "PUT"]
       },
-
+}
 ```
 
 ##### Response Body
