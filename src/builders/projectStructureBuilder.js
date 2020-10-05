@@ -22,9 +22,9 @@ const readme = `
 
 ##  Quick start
 
----
 
 1.  **Get to the workplace.**
+
     Navigate into your new api directory and start it up.
 
     \`\`\`shell
@@ -33,6 +33,7 @@ const readme = `
     \`\`\`
 
 2.  **Open the source code and start editing!**
+
     Install the dependencies and run the server.
 
     \`\`\`shell
@@ -42,6 +43,7 @@ const readme = `
 
     By default this server will be running at \`http://localhost:3000\`!
 
+   
 ## Project Structure
 
     ├── node_modules
@@ -51,6 +53,7 @@ const readme = `
     ├── package.json
     ├── .gitignore
     └── README.md
+
 
 1.  **\`/node_modules\`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
