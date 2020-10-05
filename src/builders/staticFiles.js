@@ -124,7 +124,7 @@ exports.package_json = `
     \"description\": \"auto generated rest api for crud operations\",
     \"main\": \"index.js\",
     \"scripts\": {
-      \"test\": \"echo \\\\"Error: no test specified\\\\" && exit 1\",
+      \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
       \"start\": \"node index\"
     },
     \"author\": \"pavel\",
