@@ -1,7 +1,7 @@
 const projectStructureBuilder = require("./builders/projectStructureBuilder");
 const endpointBuilder = require("./builders/endpointBuilder");
 
-const baseUrl = "/home/nullpointer/Programming/Web/TEST_API_V1";
+const baseUrl = "/home/nullpointer/Programming/Web/TEST_API_V1.0";
 
 // buid project base structure
 projectStructureBuilder.build(baseUrl);
