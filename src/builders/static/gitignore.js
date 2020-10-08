@@ -1,0 +1,7 @@
+exports.gitignore = `
+bower_components
+node_modules
+*.log
+.DS_Store
+bundle.js
+`;

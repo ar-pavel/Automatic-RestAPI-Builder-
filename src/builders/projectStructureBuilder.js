@@ -12,20 +12,7 @@
  *      - create /db_modules/db.js
  **/
 
-const index = `
-const express = require("express");
-const bodyParser = require("body-parser");
-const hostname = "localhost";
-const port = 3000;
-const app = express();
-app.use(bodyParser.json());
-// this server will listen to http://localhost:3000/
-app.listen(port, () =>
-  console.log(\`RestWithExpress app listening on port \${port}!\`)
-);
-`;
-
-const staticFiles = require("./staticFiles");
+const staticFiles = require("./static/staticFiles");
 
 const fs = require("fs");
 
@@ -37,14 +24,20 @@ const writer = (name, data) => {
 };
 
 exports.build = (url) => {
+  // uncomment this when there is a chance of a directory of same name already exists
+  // this may cause error, as it may need root permission
+  // if (fs.existsSync(url)) {
+  //   fs.unlinkSync(url);
+  // }
   fs.mkdirSync(url);
+
   fs.mkdir(url + "/routes", () => {
     writer(url + "/package.json", staticFiles.package_json);
     writer(url + "/README.md", staticFiles.readme);
     writer(url + "/.gitignore", staticFiles.gitignore);
 
     // async IO operation on index.js file may make troubles
-    fs.writeFileSync(url + "/index.js", index);
+    fs.writeFileSync(url + "/index.js", staticFiles.indexBase);
   });
 
   fs.mkdir(url + "/db_modules", () => {

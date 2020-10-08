@@ -20,18 +20,22 @@
 const projectStructureBuilder = require("./builders/projectStructureBuilder");
 const endpointBuilder = require("./builders/endpointBuilder");
 
-const baseUrl = "/home/nullpointer/Programming/Web/TEST_API_V1.0";
+const baseUrl = `/home/nullpointer/Programming/Web/API-Template/TEST_API_V ${Math.ceil(
+  Math.random() * 10
+)}`;
 
 // buid project base structure
 projectStructureBuilder.build(baseUrl);
 
 // build endpoint according to json data
 // for testing perpose manual call has been made
-endpointBuilder.build(baseUrl, "student");
-endpointBuilder.build(baseUrl, "employee");
-endpointBuilder.build(baseUrl, "os");
-// endpointBuilder.build(baseUrl, "intiser");
-// endpointBuilder.build(baseUrl, "sojal");
-// endpointBuilder.build(baseUrl, "pavel");
+// endpointBuilder.build(baseUrl, "student");
+// endpointBuilder.build(baseUrl, "employee");
+endpointBuilder.build(baseUrl, "os", ["DELETE"]);
+endpointBuilder.build(baseUrl, "intiser", ["GET"]);
+endpointBuilder.build(baseUrl, "sojal", ["GET", "PUT"]);
+endpointBuilder.build(baseUrl, "pavel", ["GET", "POST", "DELETE"]);
+
+endpointBuilder.build(baseUrl, "fahim", ["GET", "POST", "PUT", "DELETE"]);
 
 // --------------------------------------------------------------------
