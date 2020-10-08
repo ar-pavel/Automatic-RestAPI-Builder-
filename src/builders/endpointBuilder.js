@@ -4,7 +4,7 @@ const staticFiles = require("./static/staticFiles");
 
 const writer = (name, data) => {
   // don't dare to go for async operation here
-  fs.appendFileSync(name, data, (err) => {
+  fs.appendFile(name, data, (err) => {
     if (err)
       console.log(`error happended while writing to ${name}...` + err + err);
     console.log(name + " : writing Succesfull!");

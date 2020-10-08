@@ -13,7 +13,7 @@
 // const baseRouter = require("./routes/base");
 // app.use("/", baseRouter);
 
-// --------------------------------------------------------
+// ------------------------------------------------------
 
 // -------------------- Static  API Building Block -----------------------------
 
@@ -26,12 +26,12 @@ const baseUrl = `/home/nullpointer/Programming/Web/API-Template/TEST_API_V ${Mat
 
 // buid project base structure
 projectStructureBuilder.build(baseUrl);
+endpointBuilder.build(baseUrl, "os", ["DELETE"]);
 
 // build endpoint according to json data
 // for testing perpose manual call has been made
 // endpointBuilder.build(baseUrl, "student");
 // endpointBuilder.build(baseUrl, "employee");
-endpointBuilder.build(baseUrl, "os", ["DELETE"]);
 endpointBuilder.build(baseUrl, "intiser", ["GET"]);
 endpointBuilder.build(baseUrl, "sojal", ["GET", "PUT"]);
 endpointBuilder.build(baseUrl, "pavel", ["GET", "POST", "DELETE"]);
