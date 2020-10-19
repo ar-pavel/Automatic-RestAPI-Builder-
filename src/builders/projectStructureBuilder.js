@@ -37,7 +37,7 @@ exports.build = (url) => {
     writer(url + "/.gitignore", staticFiles.gitignore);
 
     // async IO operation on index.js file may make troubles
-    fs.writeFileSync(url + "/index.js", staticFiles.indexBase);
+      fs.writeFileSync(url + "/index.js", staticFiles.indexBase);
   });
 
   fs.mkdir(url + "/db_modules", () => {
