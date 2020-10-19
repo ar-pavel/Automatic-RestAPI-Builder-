@@ -2,8 +2,7 @@
 
 CURRENTDIR=${pwd}
 
-PROJECT_PATH="/home/nullpointer/Programming/Web/API-Template/TEST_API_V1"
-
+PROJECT_PATH="/home/nullpointer/Programming/Web/API-Template/"
 
 
 cd PROJECT_PATH
