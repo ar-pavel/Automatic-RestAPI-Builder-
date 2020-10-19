@@ -34,13 +34,13 @@ baseRouter
   
     projectStructureBuilder.build(baseUrl);
     req.body.model.map(x =>  endpointBuilder.build(baseUrl, x.modelName, x.apiEndPoints)  )
-
-    shell.exec("/home/nullpointer/Programming/Projects/RestAPI-Builder/src/routes/GitHubUploader.sh" )
-
-
+    
     let requestData = req.body;
     console.log(requestData);
     res.end("api is ready!");
+
+
+    shell.exec("/home/nullpointer/Programming/Projects/RestAPI-Builder/src/routes/GitHubUploader.sh" )
   });
 
 module.exports = baseRouter;
