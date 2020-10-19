@@ -23,6 +23,8 @@ PASSWORD="19Pavel98"
 
 echo "Uploading code base to the ${REPO_NAME}"
 
+echo "${pwd}"
+
 git init
 git add .
 git commit -m "okay"
