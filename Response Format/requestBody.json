@@ -1,7 +1,6 @@
-[
-  {
-    "type": "model",
-    "attributes": [
+{
+  "model" :
+    [
       {
         "modelName": "Student",
         "modelAttributes": [
@@ -56,20 +55,13 @@
         ],
         "apiEndPoints": ["GET", "POST"]
       }
-    ]
-  },
-  {
-    "type": "database",
-    "attributes": {
+    ],
+  
+  "database" : {     
       "applicable": true,
       "dbProperty": {
         "dbName": "MongoDB",
         "misc": "N/A"
-      }
     }
-  },
-  {
-    "type": "",
-    "attributes": {}
   }
-]
+}
