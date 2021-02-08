@@ -1,4 +1,9 @@
 const fs = require("fs");
+const {
+  color,
+  colorsWithType,
+  colorsWithBackground,
+} = require("../utils/colorful");
 
 const staticFiles = require("./static/staticFiles");
 
@@ -28,22 +33,39 @@ exports.build = (url, name, endPoints) => {
 
   // without params
   writer(url + `/routes/${name}Router.js`, staticFiles.router(name).all);
-  console.log("end points creating for : ");
+  // console.log("End points creating for : ");
+  console.log(
+    colorsWithBackground(
+      "Magenta",
+      "Bright",
+      "Black",
+      "End points creating for : "
+    )
+  );
   endPoints.map((x) => {
-    console.log(x);
+    // console.log(x);
+    console.log(colorsWithType("Green", "Bright", x));
+
     writer(url + `/routes/${name}Router.js`, staticFiles.router(name)[`${x}`]);
   });
   writer(url + `/routes/${name}Router.js`, staticFiles.router(name).end);
 
   // with params
-  console.log("end points creating for : ");
+  console.log(
+    colorsWithBackground(
+      "Blue",
+      "Bright",
+      "Black",
+      "End points creating for : "
+    )
+  );
 
   writer(
     url + `/routes/${name}Router.js`,
     staticFiles.router(name).allWithParam
   );
   endPoints.map((x) => {
-    console.log(`${x}WithParam`);
+    console.log(colorsWithType("Green", "Bright", `${x}WithParam`));
     writer(
       url + `/routes/${name}Router.js`,
       staticFiles.router(name)[`${x}WithParam`]
